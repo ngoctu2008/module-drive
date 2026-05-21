@@ -10,14 +10,14 @@
 
         <form action="{FORM_ACTION}" method="post">
             <div class="form-group">
-                <label>Service Account JSON</label>
+                <label>{LANG.service_account_json}</label>
                 <textarea name="service_account_json" class="form-control" rows="8">{DATA.service_account_json}</textarea>
-                <span class="help-block">Paste the JSON configuration downloaded from Google Cloud Console.</span>
+                <span class="help-block">{LANG.service_account_desc}</span>
             </div>
             <div class="form-group">
-                <label>Root Folder ID</label>
+                <label>{LANG.root_folder_id}</label>
                 <input type="text" name="root_folder_id" value="{DATA.root_folder_id}" class="form-control" />
-                <span class="help-block">The ID of the folder on Google Drive you want to sync.</span>
+                <span class="help-block">{LANG.root_folder_desc}</span>
             </div>
             <input type="hidden" name="checkss" value="{CHECKSS}" />
             <div class="text-center">
